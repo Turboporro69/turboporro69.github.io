@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <video id="myVideo" autoplay muted loop>
+        <source src="chopper.mp4" type="video/mp4">
+    </video>
+
+    <script>
+        // Obtén la referencia al video
+        var video = document.getElementById("myVideo");
+
+        // Reproduce el video automáticamente
+        video.play();
+
+        // Ajusta el volumen al máximo
+        video.volume = 1;
+    </script>
+</body>
+</html>
