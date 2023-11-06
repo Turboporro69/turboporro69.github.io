@@ -1,53 +1,58 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="icon" href="icon.ico" type="image/x-icon">
-
-    <title>JORDIREX777 the anime</title>
-    <style>
-         html {
-            height: 100%;
-            margin: 0;
-            background-image: url('https://i.ytimg.com/vi/KEkrWRHCDQU/maxresdefault.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .texto {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: white; /* Cambia el color del texto a blanco */
-            text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Agrega un contorno negro alrededor del texto */
-        }
-
-        .footer {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            color: white;
-            text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Agrega un contorno negro alrededor del texto */
-        }
-   
-    </style>
-</head>
 <body>
-    <div class="texto">
-        <h1>Hackerman</h1>
-        <p>HOLA SOY JORDIREX777 O TAMBIEN HACKERMAN</p>
-        <img src="https://i.pinimg.com/736x/e7/35/00/e735009e177254bafbbafc73b3cb0c62.jpg" width="100" height="200">
-        <p></p>
-        <p>Necesito una waifu loli kawaii <b>que me de mimitos proveniente de un isekai</b> ^^</p>
-        <h1>Requisitos para mi polola</h1>
-        <img src="https://i.pinimg.com/originals/1e/6c/ec/1e6cec033caf5ebf9b3a6ec22ed35d43.gif" width="100">
-        <p></p>
-        <p>Numero 1. menor de 13</p>
-    </div>
-    
-    <div class="footer">
-        <a href="https://x.com/athenasgore" style="color: white; text-decoration: none;">@athenasgore</a>
-    </div>
+  <nav class="navMenu">
+    <a href="jordirex777.html">Jordirex777</a>
+    <a href="chopper.html">Chopper</a>
+  </nav>
 </body>
-</html>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #272727;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .navMenu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+  }
+
+  .navMenu a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0 10px; /* Espacio horizontal entre elementos */
+    position: relative; /* Agregamos una posición relativa */
+  }
+
+  .navMenu a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px; /* Altura de la línea */
+    background: #ac00e0;
+    bottom: 0; /* Colocamos la línea justo debajo del texto del enlace */
+    left: 0;
+    opacity: 0;
+    -webkit-transition: width 0.2s ease-in-out, opacity 0.2s ease-in-out; /* Agregamos una transición para width y opacity */
+    transition: width 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  }
+
+  .navMenu a:hover::before {
+    width: 100%; /* La línea se expande horizontalmente al pasar el mouse sobre el enlace */
+    opacity: 1; /* La línea se vuelve visible */
+  }
+</style>
