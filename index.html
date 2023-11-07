@@ -1,58 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #050801;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+        }
+
+        a {
+            position: relative;
+            display: inline-block;
+            padding: 25px 30px;
+            margin: 40px 0;
+            color: #ffffff; /* Cambia el color del texto a blanco */
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: 0.5s;
+            letter-spacing: 4px;
+            overflow: hidden;
+            margin-right: 50px;
+        }
+
+        a:hover {
+            background: #ffffff; /* Cambia el color de fondo a blanco al pasar el mouse */
+            color: #050801; /* Cambia el color del texto a negro al pasar el mouse */
+            box-shadow: 0 0 5px #ffffff,
+                0 0 25px #ffffff,
+                0 0 50px #ffffff,
+                0 0 200px #ffffff;
+            -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+        }
+
+        a:nth-child(1) {
+            filter: hue-rotate(270deg);
+        }
+
+        a:nth-child(2) {
+            filter: hue-rotate(110deg);
+        }
+
+        a span {
+            position: absolute;
+            display: block;
+        }
+
+        a span:nth-child(1) {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #ffffff); /* Cambia el color a blanco */
+            animation: animate1 1s linear infinite;
+        }
+
+        @keyframes animate1 {
+            0% {
+                left: -100%;
+            }
+            50%,
+            100% {
+                left: 100%;
+            }
+        }
+
+        a span:nth-child(2) {
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, #ffffff); /* Cambia el color a blanco */
+            animation: animate2 1s linear infinite;
+            animation-delay: 0.25s;
+        }
+
+        @keyframes animate2 {
+            0% {
+                top: -100%;
+            }
+            50%,
+            100% {
+                top: 100%;
+            }
+        }
+
+        a span:nth-child(3) {
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, #ffffff); /* Cambia el color a blanco */
+            animation: animate3 1s linear infinite;
+            animation-delay: 0.50s;
+        }
+
+        @keyframes animate3 {
+            0% {
+                right: -100%;
+            }
+            50%,
+            100% {
+                right: 100%;
+            }
+        }
+
+        a span:nth-child(4) {
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, #ffffff); /* Cambia el color a blanco */
+            animation: animate4 1s linear infinite;
+            animation-delay: 0.75s;
+        }
+
+        @keyframes animate4 {
+            0% {
+                bottom: -100%;
+            }
+            50%,
+            100% {
+                bottom: 100%;
+            }
+        }
+    </style>
+</head>
 <body>
-  <nav class="navMenu">
-    <a href="jordirex777.html">Jordirex777</a>
-    <a href="chopper.html">Chopper</a>
-  </nav>
+    <a href="jordirex777.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Jordirex777
+    </a>
+    <a href="chopper.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Chopper
+    </a>
 </body>
-<style>
-  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-  * {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-
-  body {
-    background: #272727;
-    font-family: "Montserrat", sans-serif;
-  }
-
-  .navMenu {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-  }
-
-  .navMenu a {
-    color: #f6f4e6;
-    text-decoration: none;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding: 0 10px; /* Espacio horizontal entre elementos */
-    position: relative; /* Agregamos una posición relativa */
-  }
-
-  .navMenu a::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px; /* Altura de la línea */
-    background: #ac00e0;
-    bottom: 0; /* Colocamos la línea justo debajo del texto del enlace */
-    left: 0;
-    opacity: 0;
-    -webkit-transition: width 0.2s ease-in-out, opacity 0.2s ease-in-out; /* Agregamos una transición para width y opacity */
-    transition: width 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  }
-
-  .navMenu a:hover::before {
-    width: 100%; /* La línea se expande horizontalmente al pasar el mouse sobre el enlace */
-    opacity: 1; /* La línea se vuelve visible */
-  }
-</style>
+</html>
