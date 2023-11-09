@@ -18,7 +18,7 @@
     </style>
 </head>
 <body>
-    <!--<p>El número aleatorio generado con dos decimales es: <span id="numeroAleatorio"></span></p>-->
+    <p>El número aleatorio generado con dos decimales es: <span id="numeroAleatorio"></span></p>
     
     <video id="myVideo" autoplay loop>
         <source src="chopper.mp4" type="video/mp4">
@@ -29,14 +29,14 @@
         var numeroAleatorio = (Math.random() * 100).toFixed(0) / 100;
 
         // Muestra el número aleatorio en la página
-        // document.getElementById("numeroAleatorio").textContent = numeroAleatorio;
+           document.getElementById("numeroAleatorio").textContent = numeroAleatorio;
 
         var video = document.getElementById("myVideo");
 
         // Comprueba si el número aleatorio es menor que el 10% (0.10)
         if (numeroAleatorio < 0.10) {
             // Cambia la fuente del video para reproducir otro video en lugar del original
-            video.src = "chopper (2).mp4";
+            video.src = "chopper.mp4";
         }
 
         // Reproduce el video automáticamente
