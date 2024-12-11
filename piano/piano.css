@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Monocraft;
+    font-weight: normal;
+    src: url('Monocraft.ttf') format('truetype');
+}
 
 * {
   margin: 0;
