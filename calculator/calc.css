@@ -36,6 +36,10 @@ body {
     color: rgb(0, 0, 0);
     border-radius: 12px;
     padding: 15px;
+    transition: all 0.3s ease-in-out;
+}
+.display:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .buttons {
     display: grid;
@@ -49,4 +53,13 @@ body {
     font-size: 20px;
     cursor: pointer;
     background-color: white;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out;
+}
+.buttons button:hover {
+    transform: scale(1.1);
+    background-color: #e0e0e0;
+}
+.buttons button:active {
+    transform: scale(0.9);
+    background-color: #d0d0d0;
 }
